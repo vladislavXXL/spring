@@ -8,8 +8,15 @@ package coach;
  */
 public interface Coach {
 
-    /** Method to print task from coach.
+    /**
+     * Method to print task from coach.
      * @return result
      */
     String getCoachTask();
+
+    /**
+     * Method to print daily fortune.
+     * @return String resul
+     */
+    String getDailyFortune();
 }

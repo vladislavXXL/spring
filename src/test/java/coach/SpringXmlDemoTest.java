@@ -30,8 +30,11 @@ public class SpringXmlDemoTest {
         /** Retrieve bean from spring container.*/
         Coach coach = this.context.getBean("myCoach", Coach.class);
 
-        /** Call methods of the bean.*/
+        /** Call method getCoachTask().*/
         System.out.println(coach.getCoachTask());
+
+        /** Call method getDailyFortune().*/
+        System.out.println(coach.getDailyFortune());
 
     }
 
