@@ -16,7 +16,7 @@ public interface Coach {
 
     /**
      * Method to print daily fortune.
-     * @return String resul
+     * @return String result
      */
     String getDailyFortune();
 }

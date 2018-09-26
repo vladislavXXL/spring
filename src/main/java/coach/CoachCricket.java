@@ -1,21 +1,27 @@
 package coach;
 
 /**
- * Class CoachSwimming.
+ * Class CoachCricket.
  * @author v.ivanov
  * @version 1
- * @since 25.09.2018
+ * @since 26.09.2018
  */
-public class CoachSwimming implements Coach {
+public class CoachCricket implements Coach {
 
     /** Field fortuneService.*/
     private FortuneService fortuneService;
 
+    /** Constructor.*/
+    public CoachCricket() {
+        System.out.println("CoachCricket: inside no-arg constructor");
+    }
+
     /**
-     * Constructor.
+     * Setter fortuneService.
      * @param fortuneService fortuneService
      */
-    public CoachSwimming(FortuneService fortuneService) {
+    public void setFortuneService(FortuneService fortuneService) {
+        System.out.println("CoachCricket: inside setter method - setFortuneService");
         this.fortuneService = fortuneService;
     }
 
@@ -25,7 +31,7 @@ public class CoachSwimming implements Coach {
      */
     @Override
     public String getCoachTask() {
-        return "Swim 5 km in the sea.";
+        return "Practice fast bowling for 15 minutes.";
     }
 
     /**
@@ -34,6 +40,6 @@ public class CoachSwimming implements Coach {
      */
     @Override
     public String getDailyFortune() {
-        return "Just do it: " + this.fortuneService.getFortune();
+        return this.fortuneService.getFortune();
     }
 }

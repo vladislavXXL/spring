@@ -13,7 +13,7 @@ public class CoachFootball implements Coach {
 
     /**
      * Constructor.
-     * @param theFortuneService
+     * @param theFortuneService theFortuneService
      */
     public CoachFootball(FortuneService theFortuneService) {
         this.fortuneService = theFortuneService;
