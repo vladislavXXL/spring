@@ -20,6 +20,7 @@ public class SetterXmlTest {
         CoachCricket coach = context.getBean("myCricketCoach", CoachCricket.class);
         System.out.println(coach.getCoachTask());
         System.out.println(coach.getDailyFortune());
+        System.out.println("Email: " + coach.getEmailAddress() + ", team: " + coach.getTeam());
         context.close();
     }
 }

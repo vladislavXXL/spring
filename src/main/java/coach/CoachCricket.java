@@ -11,6 +11,12 @@ public class CoachCricket implements Coach {
     /** Field fortuneService.*/
     private FortuneService fortuneService;
 
+    /** Field email.*/
+    private String emailAddress;
+
+    /** Field team.*/
+    private String team;
+
     /** Constructor.*/
     public CoachCricket() {
         System.out.println("CoachCricket: inside no-arg constructor");
@@ -23,6 +29,24 @@ public class CoachCricket implements Coach {
     public void setFortuneService(FortuneService fortuneService) {
         System.out.println("CoachCricket: inside setter method - setFortuneService");
         this.fortuneService = fortuneService;
+    }
+
+    /**
+     * Email address setter.
+     * @param emailAddress email
+     */
+    public void setEmailAddress(String emailAddress) {
+        System.out.println("CoachCricket: inside setter method - setEmailAddress");
+        this.emailAddress = emailAddress;
+    }
+
+    /**
+     * Team setter.
+     * @param team set team
+     */
+    public void setTeam(String team) {
+        System.out.println("CoachCricket: inside setter method - setTeam");
+        this.team = team;
     }
 
     /**
@@ -41,5 +65,21 @@ public class CoachCricket implements Coach {
     @Override
     public String getDailyFortune() {
         return this.fortuneService.getFortune();
+    }
+
+    /**
+     * Email address getter.
+     * @return email
+     */
+    public String getEmailAddress() {
+        return this.emailAddress;
+    }
+
+    /**
+     * Team getter.
+     * @return team
+     */
+    public String getTeam() {
+        return this.team;
     }
 }
