@@ -36,6 +36,7 @@ public class SpringXmlDemoTest {
         /** Call method getDailyFortune().*/
         System.out.println(coach.getDailyFortune());
 
+
     }
 
     /**
